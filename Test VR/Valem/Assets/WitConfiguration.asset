@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: WitConfiguration
+  m_EditorClassIdentifier: 
+  application:
+    witConfiguration: {fileID: 0}
+    name: shapes_demo
+    id: 799f6edf-5383-47ae-b1af-3cbbc2d09ef5
+    lang: en
+    isPrivate: 0
+    createdAt: 2021-11-11T19:28:45-0800
+  configId: 6d3db736e97ffa541a913fb08666481c
+  clientAccessToken: 
+  entities:
+  - witConfiguration: {fileID: 11400000}
+    id: 402753511512995
+    name: color
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: black
+      synonyms:
+      - black
+    - keyword: blue
+      synonyms:
+      - blue
+    - keyword: brown
+      synonyms:
+      - brown
+    - keyword: gold
+      synonyms:
+      - gold
+    - keyword: green
+      synonyms:
+      - green
+    - keyword: magenta
+      synonyms:
+      - magenta
+    - keyword: maroon
+      synonyms:
+      - maroon
+      - red
+    - keyword: orange
+      synonyms:
+      - orange
+    - keyword: pink
+      synonyms:
+      - pink
+    - keyword: purple
+      synonyms:
+      - purple
+    - keyword: red
+      synonyms:
+      - red
+    - keyword: violet
+      synonyms:
+      - violet
+    - keyword: white
+      synonyms:
+      - white
+    - keyword: yellow
+      synonyms:
+      - yellow
+  - witConfiguration: {fileID: 11400000}
+    id: 838771890134690
+    name: shape
+    lookups:
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: capsule
+      synonyms:
+      - capsule
+    - keyword: cube
+      synonyms:
+      - cube
+      - square
+    - keyword: cylinder
+      synonyms:
+      - cylinder
+      - tube
+    - keyword: sphere
+      synonyms:
+      - ball
+      - sphere
+  intents:
+  - witConfiguration: {fileID: 11400000}
+    id: 470865211010426
+    name: change_color
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 362090589006139
+      name: color:color
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 254272293387484
+      name: shape:shape
+      lookups: []
+      roles: []
+      keywords: []
+  traits: []
