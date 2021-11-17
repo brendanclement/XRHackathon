@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   application:
     witConfiguration: {fileID: 0}
-    name: shapes_demo
-    id: 799f6edf-5383-47ae-b1af-3cbbc2d09ef5
+    name: xr_hackathon
+    id: 2146966418789431
     lang: en
-    isPrivate: 0
-    createdAt: 2021-11-11T19:28:45-0800
+    isPrivate: 1
+    createdAt: 2021-11-14T10:04:19-0800
   configId: 6d3db736e97ffa541a913fb08666481c
-  clientAccessToken: 
+  clientAccessToken: EDVP4VE2B5XWQACYCC3X4TTQUY2XZKBA
   entities:
   - witConfiguration: {fileID: 11400000}
-    id: 402753511512995
+    id: 2762299620728502
     name: color
     lookups:
     - free-text
@@ -31,86 +31,177 @@ MonoBehaviour:
     roles:
     - 
     keywords:
-    - keyword: black
-      synonyms:
-      - black
-    - keyword: blue
-      synonyms:
-      - blue
-    - keyword: brown
-      synonyms:
-      - brown
-    - keyword: gold
-      synonyms:
-      - gold
     - keyword: green
       synonyms:
       - green
-    - keyword: magenta
-      synonyms:
-      - magenta
-    - keyword: maroon
-      synonyms:
-      - maroon
-      - red
-    - keyword: orange
-      synonyms:
-      - orange
-    - keyword: pink
-      synonyms:
-      - pink
-    - keyword: purple
-      synonyms:
-      - purple
     - keyword: red
       synonyms:
       - red
-    - keyword: violet
-      synonyms:
-      - violet
-    - keyword: white
-      synonyms:
-      - white
-    - keyword: yellow
-      synonyms:
-      - yellow
   - witConfiguration: {fileID: 11400000}
-    id: 838771890134690
-    name: shape
+    id: 584489436174680
+    name: necklace
     lookups:
+    - free-text
     - keywords
     roles:
     - 
     keywords:
-    - keyword: capsule
+    - keyword: necklace
       synonyms:
-      - capsule
+      - necklace
+  - witConfiguration: {fileID: 11400000}
+    id: 393090665900165
+    name: poison
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: poison
+      synonyms:
+      - poison
+  - witConfiguration: {fileID: 11400000}
+    id: 480879869838635
+    name: shape
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
     - keyword: cube
       synonyms:
       - cube
-      - square
-    - keyword: cylinder
-      synonyms:
-      - cylinder
-      - tube
     - keyword: sphere
       synonyms:
-      - ball
       - sphere
+  - witConfiguration: {fileID: 11400000}
+    id: 574897820480981
+    name: victim_name
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: Mr. Spencer
+      synonyms:
+      - mr. spencer
+    - keyword: Tom
+      synonyms:
+      - tom
+    - keyword: victim
+      synonyms:
+      - victim
+  - witConfiguration: {fileID: 11400000}
+    id: 216728730538759
+    name: will
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: will
+      synonyms:
+      - will
   intents:
   - witConfiguration: {fileID: 11400000}
-    id: 470865211010426
+    id: 1234413100396226
     name: change_color
     entities:
     - witConfiguration: {fileID: 11400000}
-      id: 362090589006139
+      id: 690415045271188
       name: color:color
       lookups: []
       roles: []
       keywords: []
     - witConfiguration: {fileID: 11400000}
-      id: 254272293387484
+      id: 317380956567133
       name: shape:shape
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 4586045658142143
+    name: get_last_contact_time_with_victim
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 436452967853478
+      name: victim_name:victim_name
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 311103867272777
+    name: get_love_letter
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 907211053260093
+    name: get_name
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 342981101004136
+    name: get_necklace
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 600161221183102
+      name: necklace:necklace
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 906880536856279
+    name: get_occupation
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 343192930942719
+    name: get_poison
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 569627060789824
+      name: poison:poison
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 216269423921067
+    name: get_relationship_status_to_victim
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 436452967853478
+      name: victim_name:victim_name
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 275821214481785
+    name: get_relationship_to_victim
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 436452967853478
+      name: victim_name:victim_name
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 971096300111238
+    name: get_suspected_killer
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 436452967853478
+      name: victim_name:victim_name
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 580254836596563
+    name: get_will
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 926669778249853
+      name: will:will
       lookups: []
       roles: []
       keywords: []
