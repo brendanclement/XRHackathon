@@ -1796,9 +1796,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1052144757}
-  audioClip: {fileID: 8300000, guid: 65d2a3302881a0d46854b9880f18809f, type: 3}
-  audioClip2: {fileID: 8300000, guid: 33df8d158da67714782f5fa44e1c8a14, type: 3}
-  errorAudio: {fileID: 8300000, guid: 995bc8f899002414485d72eb0e099c1d, type: 3}
+  Name: {fileID: 8300000, guid: 33df8d158da67714782f5fa44e1c8a14, type: 3}
+  Relationship: {fileID: 8300000, guid: c3205c57a13c9044b9e6899aa0b9eefd, type: 3}
+  Occupation: {fileID: 8300000, guid: c7abb6ad99adf1444928d1918e7744c6, type: 3}
+  RelationshipStatus: {fileID: 8300000, guid: 59741d7418adfbb48b6ee2b0fc0e15d6, type: 3}
+  LastContactTime: {fileID: 8300000, guid: 225a09e13b48c0146991debb4b99f317, type: 3}
+  SuspectedKiller: {fileID: 8300000, guid: 48cde2535333b39498ced4cff00007fe, type: 3}
+  LoveLetter: {fileID: 8300000, guid: 0785d8a36ca31344ba561cf66801d86b, type: 3}
+  Poison: {fileID: 8300000, guid: 65ce4c6da17fc0a478bc96dc13bba7e0, type: 3}
+  Will: {fileID: 8300000, guid: 8401e52f5c2dcbf478bcd610a1321a41, type: 3}
+  Necklace: {fileID: 8300000, guid: 519727a8322a4fd4c9d45245798e397c, type: 3}
+  Unknown:
+  - {fileID: 8300000, guid: e8fc01df35ae7b24eb11b69e0e56c960, type: 3}
+  - {fileID: 8300000, guid: 411cfd70087f5684787b91ee7cffd54f, type: 3}
+  - {fileID: 8300000, guid: 9dbb4a1d968cec140beced4994741f16, type: 3}
+  - {fileID: 8300000, guid: 995bc8f899002414485d72eb0e099c1d, type: 3}
 --- !u!82 &1052144757
 AudioSource:
   m_ObjectHideFlags: 0
