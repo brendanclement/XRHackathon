@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/VR Bowling.unity
+    path: Assets/Scenes/Menu.unity
+    guid: 3ab8eda54edea5e4cb3ec741bdb89aab
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: ee8a12a2c1daabf43ac88b2fbea7f4a7
+  - enabled: 1
+    path: Assets/Scenes/CrimeScene.unity
     guid: a8794a570a6436044b0f12efe3042c5e
+  - enabled: 1
+    path: Assets/Scenes/Game Won.unity
+    guid: 8559e711d1b86fb4aa7d26bee19ef176
+  - enabled: 1
+    path: Assets/Scenes/Game Lost.unity
+    guid: 4d14a90ac0a5ce54dabc6c997787d9a2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
