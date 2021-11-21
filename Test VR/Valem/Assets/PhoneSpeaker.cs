@@ -36,6 +36,7 @@ public class PhoneSpeaker : MonoBehaviour, Speaker
                 break;
         }
 
+        audioSource.PlayOneShot(misunderstoodClips[Random.Range(0, misunderstoodClips.Length)]);
         StartNewConversation();
     }
 
@@ -56,10 +57,9 @@ public class PhoneSpeaker : MonoBehaviour, Speaker
     private IEnumerable StartNewConversation()
     {
         Debug.LogWarning("GAME: Starting a new conversation");
-        audioSource.PlayOneShot(misunderstoodClips[Random.Range(0, misunderstoodClips.Length)]);
         yield return new WaitForSeconds(2.0f);
         appVoiceExperience.ActivateImmediately();
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(5.0f);
         appVoiceExperience.Deactivate();
     }
 }

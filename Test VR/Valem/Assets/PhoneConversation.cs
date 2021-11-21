@@ -14,6 +14,7 @@ public class PhoneConversation : MonoBehaviour
         if (InteractorIsController(args))
         {
             Debug.LogWarning("GAME: found interactor was a controller. starting conversation with phone");
+            audioSource.PlayOneShot(sound);
             StartCoroutine(Conversation());
             return;
         }
@@ -22,11 +23,11 @@ public class PhoneConversation : MonoBehaviour
 
     public IEnumerator Conversation()
     {
-        audioSource.PlayOneShot(sound);
+        
         yield return new WaitForSeconds(2.0f);
         Debug.LogWarning("GAME: Activating wit.ai after 2 seconds");
         appVoiceExperience.ActivateImmediately();
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(5.0f);
         Debug.LogWarning("GAME: Deactivating wit.ai after 2 seconds");
         appVoiceExperience.Deactivate();
     }
