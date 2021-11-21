@@ -23,6 +23,33 @@ MonoBehaviour:
   clientAccessToken: EDVP4VE2B5XWQACYCC3X4TTQUY2XZKBA
   entities:
   - witConfiguration: {fileID: 11400000}
+    id: 265975678711273
+    name: Mr_Brooks
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: Mr. Brooks
+      synonyms:
+      - mr. brooks
+  - witConfiguration: {fileID: 11400000}
+    id: 437485704439650
+    name: bella
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: Bela
+      synonyms:
+      - bela
+    - keyword: Bella
+      synonyms:
+      - bella
+  - witConfiguration: {fileID: 11400000}
     id: 2762299620728502
     name: color
     lookups:
@@ -37,6 +64,165 @@ MonoBehaviour:
     - keyword: red
       synonyms:
       - red
+  - witConfiguration: {fileID: 11400000}
+    id: 622192175602625
+    name: daughter
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: daughter
+      synonyms:
+      - daughter
+  - witConfiguration: {fileID: 11400000}
+    id: 582129619569454
+    name: did_it
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: did it
+      synonyms:
+      - did it
+  - witConfiguration: {fileID: 11400000}
+    id: 589387925681427
+    name: drug_addict
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: drug addict
+      synonyms:
+      - drug addict
+  - witConfiguration: {fileID: 11400000}
+    id: 3133238526953057
+    name: drug_dealer
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 4773968369291613
+    name: george
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: George
+      synonyms:
+      - george
+    - keyword: geroge
+      synonyms:
+      - geroge
+  - witConfiguration: {fileID: 11400000}
+    id: 1546523985698655
+    name: julia
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: Julia
+      synonyms:
+      - julia
+  - witConfiguration: {fileID: 11400000}
+    id: 313472990512952
+    name: killer
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: killer
+      synonyms:
+      - killer
+  - witConfiguration: {fileID: 11400000}
+    id: 443866537092895
+    name: maid
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: maid
+      synonyms:
+      - maid
+  - witConfiguration: {fileID: 11400000}
+    id: 3022825867991577
+    name: mary
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: Mary
+      synonyms:
+      - mary
+  - witConfiguration: {fileID: 11400000}
+    id: 4543077735815412
+    name: mrs_brooks
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: Mrs. Brooks
+      synonyms:
+      - mrs. brooks
+  - witConfiguration: {fileID: 11400000}
+    id: 368600131730706
+    name: mrs_spencers
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: Mrs. Spencers
+      synonyms:
+      - mrs. spencers
+  - witConfiguration: {fileID: 11400000}
+    id: 415144303411375
+    name: ms_luchi
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: Ms. Luchi
+      synonyms:
+      - ms. luchi
+  - witConfiguration: {fileID: 11400000}
+    id: 331984312069699
+    name: murderer
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: muderer
+      synonyms:
+      - muderer
+    - keyword: murderer
+      synonyms:
+      - murderer
   - witConfiguration: {fileID: 11400000}
     id: 584489436174680
     name: necklace
@@ -94,6 +280,18 @@ MonoBehaviour:
     - keyword: victim
       synonyms:
       - victim
+  - witConfiguration: {fileID: 11400000}
+    id: 4755079171204465
+    name: wife
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: wife
+      synonyms:
+      - wife
   - witConfiguration: {fileID: 11400000}
     id: 216728730538759
     name: will
@@ -202,6 +400,166 @@ MonoBehaviour:
     - witConfiguration: {fileID: 11400000}
       id: 926669778249853
       name: will:will
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 583058459654438
+    name: suspect_bella
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 394613225735322
+      name: bella:bella
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 237356431823529
+      name: did_it:did_it
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 3080801568857973
+      name: killer:killer
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 490808662086726
+      name: maid:maid
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 628355005275587
+      name: ms_luchi:ms_luchi
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 204431715080993
+      name: murderer:murderer
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 432456174917779
+    name: suspect_george
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 588624168877461
+      name: Mr_Brooks:Mr_Brooks
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 237356431823529
+      name: did_it:did_it
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 220201176920065
+      name: drug_addict:drug_addict
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 300975528408727
+      name: george:george
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 3080801568857973
+      name: killer:killer
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 204431715080993
+      name: murderer:murderer
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 410293014066917
+    name: suspect_julia
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 676143693378562
+      name: daughter:daughter
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 237356431823529
+      name: did_it:did_it
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 594032235141889
+      name: julia:julia
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 3080801568857973
+      name: killer:killer
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 869240080405558
+      name: mrs_brooks:mrs_brooks
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 204431715080993
+      name: murderer:murderer
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 1884151168432669
+    name: suspect_mary
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 237356431823529
+      name: did_it:did_it
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 3080801568857973
+      name: killer:killer
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 620153979116515
+      name: mary:mary
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 595175735067494
+      name: mrs_spencers:mrs_spencers
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 204431715080993
+      name: murderer:murderer
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 1036428357210243
+      name: wife:wife
       lookups: []
       roles: []
       keywords: []

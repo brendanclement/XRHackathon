@@ -531,12 +531,6 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1558865624}
         m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
@@ -550,21 +544,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_Deactivated:
+  m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1558865624}
-        m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1558865623}
         m_TargetAssemblyTypeName: ActiveSpeaker, Assembly-CSharp
         m_MethodName: setSpeaker
@@ -577,6 +559,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1558865624}
+        m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
+        m_MethodName: Deactivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2084,13 +2084,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784616868}
-  m_LocalRotation: {x: 0.5146839, y: -0.4823641, z: -0.52816015, w: 0.47272846}
+  m_LocalRotation: {x: 0.55894536, y: -0.53227067, z: -0.47782454, w: 0.41946617}
   m_LocalPosition: {x: -0.000017, y: -0.000299, z: -0.000027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1168566727}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -1.313, y: 270.278, z: 264.967}
+  m_LocalEulerAnglesHint: {x: -2.278, y: 258.953, z: 265.323}
 --- !u!1 &795260457 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3969484250783809430, guid: 4e07960701149c8498c6afe679b70f18,
@@ -2185,13 +2185,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832006119}
-  m_LocalRotation: {x: -0.00303477, y: -0.11317141, z: -0.68484414, w: 0.71984136}
-  m_LocalPosition: {x: -0.00041831672, y: 0, z: -0.0002855315}
-  m_LocalScale: {x: 0.45451823, y: 0.2926073, z: 0.45327547}
+  m_LocalRotation: {x: 0.00071823597, y: -0.014510483, z: -0.68995786, w: 0.72370374}
+  m_LocalPosition: {x: -0.00011, y: -0.000019, z: -0.000514}
+  m_LocalScale: {x: 0.43997365, y: 0.2982841, z: 0.43877065}
   m_Children: []
   m_Father: {fileID: 7400266916577439383}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 189.171, y: 170.745, z: 93.598}
+  m_LocalEulerAnglesHint: {x: 181.088, y: 178.74, z: 92.747}
 --- !u!1001 &856891853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2868,12 +2868,6 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1558865624}
         m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
@@ -2887,6 +2881,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1558865624}
+        m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
+        m_MethodName: Deactivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1558865623}
+        m_TargetAssemblyTypeName: ActiveSpeaker, Assembly-CSharp
+        m_MethodName: setSpeaker
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
   m_Deactivated:
     m_PersistentCalls:
       m_Calls:
@@ -5160,12 +5184,6 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1558865624}
         m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
@@ -5179,21 +5197,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_Deactivated:
+  m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1558865624}
-        m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1558865623}
         m_TargetAssemblyTypeName: ActiveSpeaker, Assembly-CSharp
         m_MethodName: setSpeaker
@@ -5206,6 +5212,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1558865624}
+        m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
+        m_MethodName: Deactivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5907,13 +5931,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208218095}
-  m_LocalRotation: {x: 0.49372983, y: -0.50638694, z: -0.49673787, w: 0.5030455}
-  m_LocalPosition: {x: 0.000016, y: -0.002566, z: 0.000373}
-  m_LocalScale: {x: 0.7107623, y: 0.93867177, z: 0.93867177}
+  m_LocalRotation: {x: 0.5916051, y: -0.60258085, z: -0.37426266, w: 0.38318026}
+  m_LocalPosition: {x: 0.00002, y: -0.00186, z: 0.00036}
+  m_LocalScale: {x: 0.7036547, y: 0.92928505, z: 0.92928505}
   m_Children: []
   m_Father: {fileID: 69449791}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.364, y: -90.023, z: -88.913}
+  m_LocalEulerAnglesHint: {x: 0.134, y: -115.227, z: -88.862}
 --- !u!1 &1260811186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6479137908180158667, guid: 4e07960701149c8498c6afe679b70f18,
@@ -5956,13 +5980,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341506450}
-  m_LocalRotation: {x: 0.5856951, y: -0.63975394, z: -0.30203554, w: 0.39553857}
+  m_LocalRotation: {x: 0.6387199, y: -0.66901004, z: -0.21687451, w: 0.31213453}
   m_LocalPosition: {x: -0.00036, y: -0.00051, z: 0.00007}
   m_LocalScale: {x: 0.60583234, y: 0.60583234, z: 0.60583234}
   m_Children: []
   m_Father: {fileID: 69449792}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 4.409, y: -120.407, z: -82.423}
+  m_LocalEulerAnglesHint: {x: 6.232, y: -135.668, z: -84.805}
 --- !u!1 &1354854368 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3c7e993951c8f8444a2f1a40e2964738,
@@ -6030,12 +6054,6 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1558865624}
         m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
@@ -6049,21 +6067,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_Deactivated:
+  m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1558865624}
-        m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1558865623}
         m_TargetAssemblyTypeName: ActiveSpeaker, Assembly-CSharp
         m_MethodName: setSpeaker
@@ -6076,6 +6082,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1558865624}
+        m_TargetAssemblyTypeName: Oculus.Voice.AppVoiceExperience, VoiceSDK.Runtime
+        m_MethodName: Deactivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -6778,13 +6802,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564892189}
-  m_LocalRotation: {x: -0.50517243, y: 0.49880177, z: 0.4700547, w: -0.52444845}
+  m_LocalRotation: {x: -0.5760471, y: 0.5618368, z: 0.39254844, w: -0.44543803}
   m_LocalPosition: {x: -0.000086, y: -0.000649, z: -0.000025}
   m_LocalScale: {x: 0.83, y: 0.83, z: 0.83}
   m_Children: []
   m_Father: {fileID: 571471534}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 3.494, y: -90.46, z: 272.739}
+  m_LocalEulerAnglesHint: {x: 4.134, y: -107.203, z: 271.617}
 --- !u!1001 &1607611661
 PrefabInstance:
   m_ObjectHideFlags: 0

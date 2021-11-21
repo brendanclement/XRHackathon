@@ -10,6 +10,11 @@ public class ActiveSpeaker : MonoBehaviour
         activeSpeaker = args.interactable.gameObject.GetComponent<NPCSpeak>();
     }
 
+    public void setSpeaker(SelectExitEventArgs args)
+    {
+        activeSpeaker = args.interactable.gameObject.GetComponent<NPCSpeak>();
+    }
+
     public void Speak(WitResponseNode commandResult)
     {
         activeSpeaker.Speak(commandResult);
