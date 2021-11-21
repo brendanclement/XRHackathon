@@ -8063,8 +8063,9 @@ GameObject:
   - component: {fileID: 8788827330574586130}
   - component: {fileID: 8788827330574586129}
   - component: {fileID: 8788827330574586128}
-  - component: {fileID: 8788827330574586127}
   - component: {fileID: 8788827330574586126}
+  - component: {fileID: 8788827330574586131}
+  - component: {fileID: 8788827330574586127}
   m_Layer: 0
   m_Name: Phone
   m_TagString: Untagged
@@ -8177,11 +8178,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 8788827330574586125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edee1818f1c692d4fbc3cdb30f99c5b0, type: 3}
+  m_Script: {fileID: 11500000, guid: ddfc2688896239544bb0a751808cab56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appVoiceExperience: {fileID: 1558865624}
   audioSource: {fileID: 8788827330574586126}
-  sound: {fileID: 8300000, guid: 76dffaf933e6f564bb5fb628426cdae2, type: 3}
+  correctAnswer: {fileID: 8300000, guid: ed837a0861401c84994d872096cceea1, type: 3}
+  wrongAnswer: {fileID: 8300000, guid: 9f2f4ac7f7fb36241a66746b90caed9b, type: 3}
+  misunderstoodClips:
+  - {fileID: 8300000, guid: 5ac6fe579e904064b92a0c15d2cc1222, type: 3}
 --- !u!114 &8788827330574586128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8215,9 +8220,21 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8788827330574586127}
-        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
-        m_MethodName: play
+      - m_Target: {fileID: 8788827330574586131}
+        m_TargetAssemblyTypeName: PhoneConversation, Assembly-CSharp
+        m_MethodName: Start
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1558865623}
+        m_TargetAssemblyTypeName: ActiveSpeaker, Assembly-CSharp
+        m_MethodName: setSpeaker
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8229,19 +8246,7 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8788827330574586127}
-        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
-        m_MethodName: stopSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -8341,3 +8346,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8788827330574586131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8788827330574586125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edee1818f1c692d4fbc3cdb30f99c5b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 8788827330574586126}
+  sound: {fileID: 8300000, guid: 76dffaf933e6f564bb5fb628426cdae2, type: 3}
+  appVoiceExperience: {fileID: 1558865624}

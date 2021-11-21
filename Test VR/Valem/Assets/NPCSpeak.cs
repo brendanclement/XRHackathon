@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Facebook.WitAi;
 using Facebook.WitAi.Lib;
 
-public class NPCSpeak : MonoBehaviour
+public class NPCSpeak : MonoBehaviour, Speaker
 {
     public AudioSource audioSource;
     public AudioClip Name;
@@ -19,7 +17,12 @@ public class NPCSpeak : MonoBehaviour
     public AudioClip Necklace;
     public AudioClip[] Unknown;
 
-    // Start is called before the first frame update
+    public void OnError(string err, string stack)
+    {
+        Debug.LogError("GAME: Got Error processing wit.ai " + err + stack);
+        HandleUnknownIntent();
+    }
+
     public void Speak(WitResponseNode commandResult)
     {
         string intent = commandResult.GetIntentName();
@@ -60,12 +63,6 @@ public class NPCSpeak : MonoBehaviour
                 HandleUnknownIntent();
                 break;
         }
-    }
-
-    public void OnError(string err, string stack)
-    {
-        Debug.LogError("GAME: Got Error processing wit.ai " + err + stack);
-        HandleUnknownIntent();
     }
 
     private void HandleUnknownIntent()

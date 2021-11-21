@@ -4,15 +4,26 @@ using Unity​Engine.XR.Interaction.Toolkit;
 
 public class ActiveSpeaker : MonoBehaviour
 {
-    private NPCSpeak activeSpeaker;
+    private Speaker activeSpeaker;
     public void setSpeaker(DeactivateEventArgs args)
     {
-        activeSpeaker = args.interactable.gameObject.GetComponent<NPCSpeak>();
+        setSpeaker(args.interactable.gameObject);
+    }
+
+    public void setSpeaker(SelectEnterEventArgs args)
+    {
+        setSpeaker(args.interactable.gameObject);
     }
 
     public void setSpeaker(SelectExitEventArgs args)
     {
-        activeSpeaker = args.interactable.gameObject.GetComponent<NPCSpeak>();
+        setSpeaker(args.interactable.gameObject);
+    }
+
+    private void setSpeaker(GameObject gameObject)
+    {
+        gameObject.TryGetComponent(out Speaker speaker);
+        activeSpeaker = speaker;
     }
 
     public void Speak(WitResponseNode commandResult)
