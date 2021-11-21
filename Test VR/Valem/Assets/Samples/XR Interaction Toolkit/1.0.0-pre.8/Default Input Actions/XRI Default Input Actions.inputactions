@@ -657,7 +657,7 @@
                 {
                     "name": "",
                     "id": "90efd65e-3290-4798-af15-21ab4d7848b5",
-                    "path": "<XRController>{RightHand}/primaryButton",
+                    "path": "<ValveIndexController>{RightHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
