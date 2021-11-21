@@ -3,7 +3,7 @@ using Facebook.WitAi.Lib;
 using Oculus.Voice;
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PhoneSpeaker : MonoBehaviour, Speaker
 {
     public AppVoiceExperience appVoiceExperience;
@@ -42,12 +42,14 @@ public class PhoneSpeaker : MonoBehaviour, Speaker
     private void PlayerLoses()
     {
         // Do something when the player loses
+        SceneManager.LoadScene("Game Lost");
         Debug.LogWarning("GAME: Player loses");
     }
 
     private void PlayerWins()
     {
         // Do something when the player wins
+        SceneManager.LoadScene("Game Won");
         Debug.LogWarning("GAME: Player wins");
     }
 
