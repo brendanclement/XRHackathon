@@ -25,16 +25,16 @@ How to play:
 
 
 Spoilers below:
-
-
-
-
-
-
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
 If you look beside the fireplace there is a cheat sheet with all the questions you can ask the NPCs. You can use different variations of these questions and you will get the appropriate response.
