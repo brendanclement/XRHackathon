@@ -844,11 +844,14 @@ MonoBehaviour:
   Poison: {fileID: 8300000, guid: 871d84c52de93c44694707460f272c05, type: 3}
   Will: {fileID: 8300000, guid: 51dd545b69a594847a6bbed01e45d360, type: 3}
   Necklace: {fileID: 8300000, guid: 08ad6f8bb5919e64c97f2e7d9041d889, type: 3}
+  Summary: {fileID: 8300000, guid: f5a9db43bf47fa9429b761b93b117257, type: 3}
+  Victim: {fileID: 8300000, guid: 59d3a04d9b1d39244bc9e0d0887983f4, type: 3}
+  Alibi: {fileID: 8300000, guid: 4ee027f7f49d9f445ae60cd72d1f6f3b, type: 3}
   Unknown:
-  - {fileID: 8300000, guid: f5a9db43bf47fa9429b761b93b117257, type: 3}
-  - {fileID: 8300000, guid: 59d3a04d9b1d39244bc9e0d0887983f4, type: 3}
-  - {fileID: 8300000, guid: 4ee027f7f49d9f445ae60cd72d1f6f3b, type: 3}
-  - {fileID: 8300000, guid: 7bcd32d88a5edea4cb67b9a3690e64ce, type: 3}
+  - {fileID: 8300000, guid: db638c00f226a6b43a602f64dda6647d, type: 3}
+  - {fileID: 8300000, guid: 962abc8974bab51478be4ac1bbd9a776, type: 3}
+  - {fileID: 8300000, guid: ecdee543e26ca514ebbc73aac42415e3, type: 3}
+  - {fileID: 8300000, guid: b20c8432d8dc95849a5aeacc08a471b3, type: 3}
   anim: {fileID: 242829928}
 --- !u!82 &242829926
 AudioSource:
@@ -3497,6 +3500,133 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3468755486377148355, guid: 4e07960701149c8498c6afe679b70f18, type: 3}
+--- !u!1 &576829035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 576829037}
+  - component: {fileID: 576829036}
+  m_Layer: 0
+  m_Name: A12_Mary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &576829036
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576829035}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f3b7e9f807f0cb84dbc7c391a0df1d26, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &576829037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576829035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &594192189
 GameObject:
   m_ObjectHideFlags: 0
@@ -5733,11 +5863,14 @@ MonoBehaviour:
   Poison: {fileID: 8300000, guid: 27ea85f6f4be3a3439081ca9433f8354, type: 3}
   Will: {fileID: 8300000, guid: fe3dad52c6070d645b23f97c3736854a, type: 3}
   Necklace: {fileID: 8300000, guid: 093e999a59e084b4888828f55cca892b, type: 3}
+  Summary: {fileID: 8300000, guid: 4be6606bf66110348aa8b3c27e20d3e7, type: 3}
+  Victim: {fileID: 8300000, guid: d3c75c1ed8ff78a42b63292425c82e7d, type: 3}
+  Alibi: {fileID: 8300000, guid: d87f73b8a3340c84e95ea5326c373c0e, type: 3}
   Unknown:
-  - {fileID: 8300000, guid: 4be6606bf66110348aa8b3c27e20d3e7, type: 3}
-  - {fileID: 8300000, guid: d3c75c1ed8ff78a42b63292425c82e7d, type: 3}
-  - {fileID: 8300000, guid: d87f73b8a3340c84e95ea5326c373c0e, type: 3}
-  - {fileID: 8300000, guid: 58b9b79d9cdeb104d841e7b434945e88, type: 3}
+  - {fileID: 8300000, guid: 56ca6fb9e91bc3046b144e5783d09e10, type: 3}
+  - {fileID: 8300000, guid: 2e14ed5d95d2fdd4895589513476b6d0, type: 3}
+  - {fileID: 8300000, guid: 113ae4858b5bfc047ba1694ae08c439a, type: 3}
+  - {fileID: 8300000, guid: f75ef946c1219994b84897c1b6ad4a08, type: 3}
   anim: {fileID: 1052144754}
 --- !u!82 &1052144757
 AudioSource:
@@ -7892,11 +8025,14 @@ MonoBehaviour:
   Poison: {fileID: 8300000, guid: 9cb2c07c784e88d49bb6165064ada870, type: 3}
   Will: {fileID: 8300000, guid: edac3c315a0fae342b73a2b6b42711d3, type: 3}
   Necklace: {fileID: 8300000, guid: da97ee5d5ec02ac40986c941a47533ed, type: 3}
+  Summary: {fileID: 8300000, guid: 95255ad582670564c8db2e7b05af0ce3, type: 3}
+  Victim: {fileID: 8300000, guid: 2fbec45f9a4430640975945262358b8b, type: 3}
+  Alibi: {fileID: 8300000, guid: f9667100f6957b646a8f646e3c459af1, type: 3}
   Unknown:
-  - {fileID: 8300000, guid: 95255ad582670564c8db2e7b05af0ce3, type: 3}
-  - {fileID: 8300000, guid: 2fbec45f9a4430640975945262358b8b, type: 3}
-  - {fileID: 8300000, guid: f9667100f6957b646a8f646e3c459af1, type: 3}
-  - {fileID: 8300000, guid: ac7eda3ea1b2cb941befe8492fc8b7df, type: 3}
+  - {fileID: 8300000, guid: 8f3066c5ee3323f4b8a62a8a2c6e7ac2, type: 3}
+  - {fileID: 8300000, guid: dede6b5456e409c4e9fc9fda5c08cfd8, type: 3}
+  - {fileID: 8300000, guid: 84fef4aa0502c1c46a7bfecb378ee891, type: 3}
+  - {fileID: 8300000, guid: 78491e0d906ad224081abf253545f867, type: 3}
   anim: {fileID: 1111966007}
 --- !u!114 &1111966006
 MonoBehaviour:
@@ -8769,11 +8905,14 @@ MonoBehaviour:
   Poison: {fileID: 8300000, guid: d35cfcac5cd1eef4d894764d89b0e597, type: 3}
   Will: {fileID: 8300000, guid: e881a421a0489bb4cacc07b1c3a0e791, type: 3}
   Necklace: {fileID: 8300000, guid: 65c292d8b6181e042b2a4bf41f6f432d, type: 3}
+  Summary: {fileID: 8300000, guid: 197b1da9df5766d4a8cc2b764873602a, type: 3}
+  Victim: {fileID: 8300000, guid: f3b7e9f807f0cb84dbc7c391a0df1d26, type: 3}
+  Alibi: {fileID: 8300000, guid: 2984541af787fc8409f80554f4ba22de, type: 3}
   Unknown:
-  - {fileID: 8300000, guid: 197b1da9df5766d4a8cc2b764873602a, type: 3}
-  - {fileID: 8300000, guid: f3b7e9f807f0cb84dbc7c391a0df1d26, type: 3}
-  - {fileID: 8300000, guid: 2984541af787fc8409f80554f4ba22de, type: 3}
-  - {fileID: 8300000, guid: c01a08f8ec2fdeb4d9d068389b426e2b, type: 3}
+  - {fileID: 8300000, guid: c2df453c66ed80842bf90b8f66a95f81, type: 3}
+  - {fileID: 8300000, guid: 2ddaa77373bdc864e9fbc08e64723d8b, type: 3}
+  - {fileID: 8300000, guid: d2f30b1e52b018a47b64398ad9a2f80b, type: 3}
+  - {fileID: 8300000, guid: 44de20d17b4863d43b7f690d76be028a, type: 3}
   anim: {fileID: 1354854371}
 --- !u!114 &1354854370
 MonoBehaviour:

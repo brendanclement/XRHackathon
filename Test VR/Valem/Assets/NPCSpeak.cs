@@ -2,6 +2,7 @@ using UnityEngine;
 using Facebook.WitAi;
 using Facebook.WitAi.Lib;
 using System.Collections;
+using System.Collections.Generic;
 
 public class NPCSpeak : MonoBehaviour, Speaker
 {
@@ -16,6 +17,9 @@ public class NPCSpeak : MonoBehaviour, Speaker
     public AudioClip Poison;
     public AudioClip Will;
     public AudioClip Necklace;
+    public AudioClip Summary;
+    public AudioClip Victim;
+    public AudioClip Alibi;
     public AudioClip[] Unknown;
     public Animator anim;
 
@@ -25,70 +29,50 @@ public class NPCSpeak : MonoBehaviour, Speaker
         HandleUnknownIntent();
     }
 
-    private IEnumerator Speak(float length)
-    {
-       
-        yield return new WaitForSeconds(length);
-
-        anim.SetBool("isTalking", false);
-    }
-
-
     public void Speak(WitResponseNode commandResult)
     {
         string intent = commandResult.GetIntentName();
-        Debug.LogError("GAME: Got intent " + commandResult.ToString());
+        Debug.Log("GAME: Got intent " + commandResult.ToString());
         switch (intent)
         {
             case "get_name":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(Name);
-                StartCoroutine(Speak(Name.length));
+                AnimateAndPlayAudio(Name);
                 break;
             case "get_relationship_to_victim":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(Relationship);
-                StartCoroutine(Speak(Relationship.length));
+                AnimateAndPlayAudio(Relationship);
                 break;
             case "get_occupation":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(Occupation);
-                StartCoroutine(Speak(Occupation.length));
+                AnimateAndPlayAudio(Occupation);
                 break;
             case "get_relationship_status_to_victim":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(RelationshipStatus);
-                StartCoroutine(Speak(RelationshipStatus.length));
+                AnimateAndPlayAudio(RelationshipStatus);
                 break;
             case "get_last_contact_time_with_victim":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(LastContactTime);
-                StartCoroutine(Speak(LastContactTime.length)); ;
+                AnimateAndPlayAudio(LastContactTime);
                 break;
             case "get_suspected_killer":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(SuspectedKiller);
-                StartCoroutine(Speak(SuspectedKiller.length));
+                AnimateAndPlayAudio(SuspectedKiller);
                 break;
             case "get_love_letter":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(LoveLetter);
-                StartCoroutine(Speak(LoveLetter.length));
+                AnimateAndPlayAudio(LoveLetter);
                 break;
             case "get_poison":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(Poison);
-                StartCoroutine(Speak(Poison.length));
+                AnimateAndPlayAudio(Poison);
                 break;
             case "get_will":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(Will);
-                StartCoroutine(Speak(Will.length));
+                AnimateAndPlayAudio(Will);
                 break;
             case "get_necklace":
-                anim.SetBool("isTalking", true);
-                audioSource.PlayOneShot(Necklace);
-                StartCoroutine(Speak(Necklace.length));
+                AnimateAndPlayAudio(Necklace);
+                break;
+            case "get_summary":
+                AnimateAndPlayAudio(Summary);
+                break;
+            case "get_victim":
+                AnimateAndPlayAudio(Victim);
+                break;
+            case "get_alibi":
+                AnimateAndPlayAudio(Alibi);
                 break;
             default:
                 HandleUnknownIntent();
@@ -96,11 +80,22 @@ public class NPCSpeak : MonoBehaviour, Speaker
         }
     }
 
-    private void HandleUnknownIntent()
+    private void AnimateAndPlayAudio(AudioClip clip)
     {
         anim.SetBool("isTalking", true);
-        AudioClip clip = Unknown[Random.Range(0, Unknown.Length)];
         audioSource.PlayOneShot(clip);
-        StartCoroutine(Speak(clip.length));
+        StartCoroutine(TurnOffAnimation(clip.length));
+    }
+
+    private IEnumerator TurnOffAnimation(float after)
+    {
+        yield return new WaitForSeconds(after);
+        anim.SetBool("isTalking", false);
+    }
+
+    private void HandleUnknownIntent()
+    {
+        AudioClip clip = Unknown[Random.Range(0, Unknown.Length)];
+        AnimateAndPlayAudio(clip);
     }
 }
