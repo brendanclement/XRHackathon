@@ -16,13 +16,7 @@ How to play:
 1. Walk around the crime scene to gather clues.
 2. Interrogate suspects by holding the Right/Left Trigger while pointing at an NPC then start asking your question. Once you finish asking your question Release the Right/Left Trigger while pointing at an NPC.
 3. Solve the murder using your own deductions and go to the phone, pick it up and tell the commisioner who the is the murderer.
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 Spoilers below:
 <br/>
